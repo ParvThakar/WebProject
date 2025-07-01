@@ -1,0 +1,32 @@
+body {
+  background: url("https://preview.colorlib.com/theme/edumark/img/banner/banner.png")
+    no-repeat center center fixed;
+}
+.white-section {
+  background-color: white;
+  padding: 100px 0;
+}
+
+.home-section {
+  padding: 100px 0;
+  color: white;
+  min-height: 100vh;
+}
+
+.custom-btn {
+  background-color: #00d9a5;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #00b98e;
+  color: white;
+}
+
+.home-section img {
+  max-height: 400px;
+}
