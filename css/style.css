@@ -1,32 +1,69 @@
-body {
-  background: url("https://preview.colorlib.com/theme/edumark/img/banner/banner.png")
-    no-repeat center center fixed;
-}
-.white-section {
-  background-color: white;
-  padding: 100px 0;
-}
-
-.home-section {
-  padding: 100px 0;
-  color: white;
-  min-height: 100vh;
-}
-
-.custom-btn {
-  background-color: #00d9a5;
-  border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 30px;
-  transition: 0.3s ease;
-}
-
-.custom-btn:hover {
-  background-color: #00b98e;
-  color: white;
-}
-
 .home-section img {
   max-height: 400px;
 }
+
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .white-section {
+      background-color: #ffffff;
+    }
+
+    .home-section {
+      transform: translateX(-100%);
+      opacity: 0;
+      animation: slideIn 1.5s forwards;
+    }
+
+   
+    .home-section {
+      background: url("https://preview.colorlib.com/theme/edumark/img/banner/banner.png");
+    }
+
+    .custom-btn {
+      animation: bounce 1s infinite alternate;
+    }
+    
+    #courses {
+      background-color: #f9f9f9;
+      padding: 60px 0;
+    }
+
+    #courses .card {
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      background: #fff;
+      position: relative;
+    }
+
+    #courses .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(41, 42, 42, 0.3);
+    }
+
+    /* Image Style */
+    #courses .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    #courses .card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    /* Card Title */
+    #courses .card-title {
+      font-size: 1.25rem;
+
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
